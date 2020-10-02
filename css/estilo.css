@@ -1,0 +1,54 @@
+.img-logo {
+    width: 100px;
+}
+.navbar-nav {
+    font-size: 22px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#navbar {
+    box-shadow: 20px 20px 28px -9px rgba(186, 218, 255, 0.275);
+}
+
+button {
+    outline: none;
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: calc((100% - 10%) / 2);
+    width: 10%;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(0deg, rgba(41,119,214,1) 0%, rgba(0,138,255,1) 100%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: skew(-20deg);
+    overflow: hidden;
+}
+.desc {
+    display: inline-block;
+    transform: skew(20deg);
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 26%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.308);
+    transform: skew(30deg);
+    filter: blur(2px);
+    transition: left 0.4s linear;
+    transition-delay: 0s;
+}
+button:hover::before {
+    left: 200%;
+}
