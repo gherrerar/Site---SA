@@ -13,7 +13,7 @@
     box-shadow: 20px 20px 28px -9px rgba(186, 218, 255, 0.275);
 }
 
-button {
+.shine {
     outline: none;
     position: absolute;
     text-align: center;
@@ -36,7 +36,7 @@ button {
     transform: skew(20deg);
 }
 
-button::before {
+.shine::before {
     content: '';
     position: absolute;
     left: -50%;
@@ -49,6 +49,6 @@ button::before {
     transition: left 0.4s linear;
     transition-delay: 0s;
 }
-button:hover::before {
+.shine:hover::before {
     left: 200%;
 }
